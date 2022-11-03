@@ -1,3 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  background-color: hsl(0, 0%, 82%);
+  background-image: url(../public/background.webp);
+  background-size: 300%;
+  animation: bg-motion 40s infinite alternate;
+}
+
+@keyframes bg-motion {
+  0% {
+    background-position: left;
+  }
+  50% {
+    background-position: 45deg;
+  }
+  100% {
+    background-position: right;
+  }
+}
